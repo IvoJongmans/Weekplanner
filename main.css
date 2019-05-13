@@ -8,6 +8,11 @@ p {
   height: 300px;
   background-color: #FEF396;
   border: 5px solid black;
+  /*nested*/
+}
+
+.col-md-4 li {
+  font-family: "Baloo Bhai", cursive;
 }
 
 @media only screen and (max-width: 768px) {

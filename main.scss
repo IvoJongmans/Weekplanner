@@ -1,3 +1,5 @@
+//SASS variables
+
 $font: 'Baloo Bhai', cursive;
 $font-size-desktop: 35px;
 $font-size-tablet: 20px; 
@@ -17,7 +19,12 @@ p {
     height: $col-md-4-height;
     background-color: $post-it-color;
     border: $col-border;
+    /*nested*/
+    li {
+        font-family: $font;
+    }
 }
+
 
 @media only screen and (max-width:768px) {
     p {
