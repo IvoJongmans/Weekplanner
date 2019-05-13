@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -23,26 +23,83 @@
 
   <div class="container">
     <div class="row">
+
+
       <div class="col-md-4 col-sm-6" id="maandag">
+
+        <input v-model="message">
+        <button v-on:click="addItem">Voeg Toe</button>
+
         <p>Maandag:</p>
+
+        <ul>
+
+        <li v-for="todo in todos">{{todo}}</li>
+        <li>{{message}}</li>
+
+        </ul>
+
+
       </div>
       <div class="col-md-4 col-sm-6" id="dinsdag">
+          <input v-model="message">
+          <button v-on:click="addItem">Voeg Toe</button>
+
           <p>Dinsdag:</p>
+
+          <ul>
+
+              <li v-for="todo in todos">{{todo}}</li>
+              <li>{{message}}</li>
+      
+          </ul>
       </div>
       <div class="col-md-4 col-sm-6" id="woensdag">
+          <input v-model="message">
+          <button v-on:click="addItem">Voeg Toe</button>
           <p>Woensdag:</p>
+          <ul>
+
+              <li v-for="todo in todos">{{todo}}</li>
+              <li>{{message}}</li>
+      
+              </ul>
       </div>
       <div class="col-md-4 col-sm-6" id="donderdag">
+          <input v-model="message">
+          <button v-on:click="addItem">Voeg Toe</button>
           <p>Donderdag:</p>
+          <ul>
+
+              <li v-for="todo in todos">{{todo}}</li>
+              <li>{{message}}</li>
+      
+              </ul>
       </div>
       <div class="col-md-4 col-sm-6" id="vrijdag">
+          <input v-model="message">
+          <button v-on:click="addItem">Voeg Toe</button>
           <p>Vrijdag:</p>
+          <ul>
+
+              <li v-for="todo in todos">{{todo}}</li>
+              <li>{{message}}</li>
+      
+              </ul>
       </div>
       <div class="col-md-4 col-sm-6" id="weekend">
+          <input v-model="message">
+          <button v-on:click="addItem">Voeg Toe</button>
           <p>Weekend:</p>
+          <ul>
+
+              <li v-for="todo in todos">{{todo}}</li>
+              <li>{{message}}</li>
+      
+              </ul>
       </div>
     </div>
   </div>
-
+  <script src="script.js"></script>
 </body>
 </html>
