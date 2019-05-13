@@ -6,7 +6,7 @@ var maandag = new Vue({
     },
     methods: {
     addItem: function () {
-        if (this.todos.length < 4) {
+        if (this.todos.length < 5) {
       this.todos.push(this.message);
       this.message = '';
     }
@@ -28,7 +28,7 @@ var dinsdag = new Vue({
     },
     methods: {
     addItem: function () {
-        if (this.todos.length < 4) {
+        if (this.todos.length < 5) {
       this.todos.push(this.message);
       this.message = '';
     }
@@ -49,7 +49,7 @@ var woensdag = new Vue({
     },
     methods: {
     addItem: function () {
-        if (this.todos.length < 4) {
+        if (this.todos.length < 5) {
       this.todos.push(this.message);
       this.message = '';
     }
@@ -70,7 +70,7 @@ var donderdag = new Vue({
     },
     methods: {
     addItem: function () {
-        if (this.todos.length < 4) {
+        if (this.todos.length < 5) {
       this.todos.push(this.message);
       this.message = '';
     }
@@ -91,7 +91,7 @@ var vrijdag = new Vue({
     },
     methods: {
     addItem: function () {
-        if (this.todos.length < 4) {
+        if (this.todos.length < 5) {
       this.todos.push(this.message);
       this.message = '';
     }
@@ -112,7 +112,7 @@ var zaterdag = new Vue({
     },
     methods: {
     addItem: function () {
-        if (this.todos.length < 4) {
+        if (this.todos.length < 5) {
       this.todos.push(this.message);
       this.message = '';
     }
