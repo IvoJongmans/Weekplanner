@@ -1,0 +1,29 @@
+$font: 'Baloo Bhai', cursive;
+$font-size-desktop: 35px;
+$font-size-tablet: 20px; 
+$padding-desktop: 25px;
+$padding-tablet: 10px;
+$post-it-color: #FEF396;
+$col-md-4-height: 300px;
+$tablet-width: 100%;
+$col-border: 5px solid black;
+
+p {
+    font-family: $font;
+    font-size: $font-size-desktop;
+    padding: $padding-desktop;
+}
+
+.col-md-4 {
+    height: $col-md-4-height;
+    background-color: $post-it-color;
+    border: $col-border;
+}
+
+@media only screen and (max-width:768px) {
+    p {
+        font-size: $font-size-tablet;
+        padding: $padding-tablet;
+    }
+}
+
