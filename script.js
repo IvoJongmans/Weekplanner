@@ -2,7 +2,9 @@ var maandag = new Vue({
     el: "#maandag",
     data: {
         todos: [],
-        message: ''
+        message: '',
+        counter: 0,
+        seen: true
     },
     methods: {
     addItem: function () {
@@ -16,6 +18,13 @@ var maandag = new Vue({
       this.message = '';
       
     }
+},
+deleteItem: function() {
+  console.log("test");
+  this.seen = false;
+},
+addId: function() {
+  
 }
   }
 })

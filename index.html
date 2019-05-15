@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -28,13 +29,13 @@
       <div class="col-md-4 col-sm-6" id="maandag">
 
         <input v-model="message">
-        <button v-on:click="addItem">Voeg Toe</button>
+        <button v-on:click="addItem" v-bind:id="counter">Voeg Toe</button>
 
         <p>Maandag:</p>
 
         <ul>
 
-        <li v-for="todo in todos">{{todo}}</li>
+        <li v-for="todo in todos" v-if="seen" v-on:click="deleteItem">{{todo}}</li>
         
 
         </ul>
@@ -100,6 +101,5 @@
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
